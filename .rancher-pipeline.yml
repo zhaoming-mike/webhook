@@ -4,5 +4,10 @@ stages:
   - runScriptConfig:
       image: python:latest
       shellScript: python -V
+- name: 流水线串联
+  steps:
+  - runScriptConfig:
+      image: a/a:1
+      shellScript: echo hello
 timeout: 60
 notification: {}
