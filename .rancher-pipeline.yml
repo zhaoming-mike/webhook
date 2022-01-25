@@ -7,7 +7,7 @@ stages:
 - name: 流水线串联
   steps:
   - runScriptConfig:
-      image: a/a:1
+      image: zhaoming23/nginx:blue
       shellScript: echo hello
 timeout: 60
 notification: {}
